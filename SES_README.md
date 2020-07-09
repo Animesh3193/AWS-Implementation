@@ -20,3 +20,19 @@
     
     *We might not use the functionality of point 5 and 6, can be taken up as an enhancement*
 
+
+We can create a SES api with provided Boto SDK Tool with Python. Documentation can be found [here](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html)
+
+```
+import boto3
+
+def create_ses_client():
+    client = boto3.client(
+        'ses',
+        region_name=settings.AWS_SES_REGION,
+        aws_access_key_id=settings.AWS_ACCESS_KEY,
+        aws_secret_access_key=settings.AWS_SECRET_KEY
+    )
+    return client
+```
+
