@@ -1,6 +1,7 @@
 # AWS-Implementation
 
 SES Logo: ![alt text][logo]
+[logo]:https://github.com/Animesh3193/AWS-Implementation/tree/master/AWS_SES/images/SES_Logo.png "Simple Email Service Logo"
 
   Amazon SES is an email platform that provides an easy, cost-effective way for you to send and receive email using your own email addresses and server emails and domains
 
@@ -68,9 +69,14 @@ We can do by directly requesting in the email verification console of AWS else w
 **Prerequisites** :- AWS Credential with IAM Permission for SES Should be provided.
 AWS Verify Console : ![alt text][console]
 
+[console]:https://github.com/Animesh3193/AWS-Implementation/tree/master/AWS_SES/images/register_mail.PNG "Registering Email"
+
+
 
 #### After adding the email
 After the emails are verified , a system generated email is sent which contains a link which is sent to email and when clicked registers the email.
 See the following image below for refernce.
 Emails Registered : ![alt text][reg_email]
+
+[reg_email]:https://github.com/Animesh3193/AWS-Implementation/tree/master/AWS_SES/images/verify_email.PNG "List of email"
 
