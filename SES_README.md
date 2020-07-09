@@ -1,7 +1,5 @@
 # AWS-Implementation
-
-SES Logo: ![alt text][logo]
-[logo]:https://github.com/Animesh3193/AWS-Implementation/tree/master/AWS_SES/images/SES_Logo.png "Simple Email Service Logo"
+![alt text](/AWS_SES/images/SES_Logo.png "Simple Email Service Logo")
 
   Amazon SES is an email platform that provides an easy, cost-effective way for you to send and receive email using your own email addresses and server emails and domains
 
@@ -27,7 +25,7 @@ SES Logo: ![alt text][logo]
 #### Initializing
 We can create a SES api with provided Boto SDK Tool with Python. Documentation can be found [here](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html)
 
-        ```python
+```python
         import boto3
 
         def create_ses_client():
@@ -38,7 +36,8 @@ We can create a SES api with provided Boto SDK Tool with Python. Documentation c
                 aws_secret_access_key=settings.AWS_SECRET_KEY
             )
             return client
-        ```
+            
+```
 
 #### Adding Email to SES
 As this is a default sandbox environment we cannot send mail to any one we wish, until they are added to the AWS email address identity.
@@ -46,7 +45,7 @@ As this is a default sandbox environment we cannot send mail to any one we wish,
 We can do by directly requesting in the email verification console of AWS else we can call AWS SES Api *We use Boto SDK here too*
 
 > This is an API Method below
-        ```python
+```python
         ses_client = create_ses_client()
 
         # To use above api to send mail
@@ -62,21 +61,18 @@ We can do by directly requesting in the email verification console of AWS else w
            'content-length': '215',
            'date': 'Fri, 03 Jul 2020 03:16:16 GMT'},
           'RetryAttempts': 0}}
-
-        ```
+```
 
 >This is an AWS Console Method. It can be directly accessed from the [link](https://us-east-2.console.aws.amazon.com/ses/home?region=us-east-2#verified-senders-email:)
 **Prerequisites** :- AWS Credential with IAM Permission for SES Should be provided.
-AWS Verify Console : ![alt text][console]
-
-[console]:https://github.com/Animesh3193/AWS-Implementation/tree/master/AWS_SES/images/register_mail.PNG "Registering Email"
+AWS Verify Console : 
+![alt text](/AWS_SES/images/register_mail.PNG "Registering Email")
 
 
 
 #### After adding the email
 After the emails are verified , a system generated email is sent which contains a link which is sent to email and when clicked registers the email.
 See the following image below for refernce.
-Emails Registered : ![alt text][reg_email]
-
-[reg_email]:https://github.com/Animesh3193/AWS-Implementation/tree/master/AWS_SES/images/verify_email.PNG "List of email"
+Emails Registered : 
+![alt text](/AWS_SES/images/verify_email.PNG "List of email")
 
