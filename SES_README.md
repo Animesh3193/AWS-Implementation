@@ -6,7 +6,8 @@
   2. Transactional or Conformation or marketing emails from a company to customers.
   3. Correspondence emails as such that of yammer group in Tek.
   4. Alerts mail or Support ticket emails internal to the application etc.
-  *For inventory management we have use it as an alert system and to deliver reports*
+    
+    *For inventory management we have use it as an alert system and to deliver reports*
 
 
 ### Something to know about
@@ -16,5 +17,5 @@
   4. From inside an ec2 instance if the application is configured to send email through SES the daily limit changes to 62000 mails per day.
   5. Even the SES email sent or recieved can be stored in S3 storage.
   6. Api calls to SES can be logged using AWS Cloud Trail and SES email sending or recieving can be configured as an event in AWS CloudWatch to trigger different event.
-  
-  *We might not use the functionality of point 5 and 6, can be taken up as an enhancement*
+    
+    *We might not use the functionality of point 5 and 6, can be taken up as an enhancement*
