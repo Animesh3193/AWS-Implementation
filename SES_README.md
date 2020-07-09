@@ -63,9 +63,11 @@ We can do by directly requesting in the email verification console of AWS else w
           'RetryAttempts': 0}}
 ```
 
->This is an AWS Console Method. It can be directly accessed from the [link](https://us-east-2.console.aws.amazon.com/ses/home?region=us-east-2#verified-senders-email:)
+>This is an AWS Console Method. 
+
+It can be directly accessed from the [link](https://us-east-2.console.aws.amazon.com/ses/home?region=us-east-2#verified-senders-email:).
 **Prerequisites** :- AWS Credential with IAM Permission for SES Should be provided.
-AWS Verify Console : 
+AWS Verify Console :- 
 ![alt text](/AWS_SES/images/register_mail.PNG "Registering Email")
 
 
