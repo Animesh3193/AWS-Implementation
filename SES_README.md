@@ -19,3 +19,4 @@
   6. Api calls to SES can be logged using AWS Cloud Trail and SES email sending or recieving can be configured as an event in AWS CloudWatch to trigger different event.
     
     *We might not use the functionality of point 5 and 6, can be taken up as an enhancement*
+
