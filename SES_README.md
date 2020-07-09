@@ -78,3 +78,20 @@ See the following image below for refernce.
 Emails Registered : 
 ![alt text](/AWS_SES/images/verify_email.PNG "List of email")
 
+
+#### List of items
+- [x] Installed SDK Locally.
+- [x] Inetgrated in Django.
+- [ ] Sending Reports to emails when requested from UI
+- [ ] Sending email alert on expiry/depletion of Software and stocks resp.
+
+
+#### Working memebers
+
+| AWS Module    | Members       | knowledge    | Plan to Use |
+| ------------- |:-------------:| ------------:| -----------:|
+| SES           | animesh       | Hands on     | Sprint 4    |
+|               | vinod         | Working Idea | Sprint 5    |
+|               | rahul         | Working Idea | Sprint 5    |
+|               | kavya         | High Level   | Sprint 6    |
+|               | yashi         | High Level   | -NA-        |
